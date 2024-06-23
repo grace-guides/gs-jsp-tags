@@ -66,6 +66,11 @@ dependencies {
     runtimeOnly "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3"
     runtimeOnly "jakarta.el:jakarta.el-api:3.0.3"
     runtimeOnly "org.glassfish:jakarta.el:3.0.4"
+    // Using JSP tags
+    runtimeOnly "org.graceframework:grace-web-jsp"
+    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:2.3.6"
+    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:1.2.7"
+    runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:1.2.6"
     runtimeOnly "org.graceframework.plugins:asset-pipeline-plugin:5.2.6"
     testImplementation "org.graceframework:grace-test-support"
     testImplementation "org.mockito:mockito-core"
