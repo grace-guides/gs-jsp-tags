@@ -2,10 +2,10 @@
 
 ## Grace Version
 
-* Grace 2022.2.6
+* Grace 2023.0.0-M7
 
 > [!TIP]
-> If you want to use JSP tags in Grace 2023.0.0, please checkout branch [2023.0.x](https://github.com/grace-guides/gs-jsp-tags/tree/2023.0.x).
+> If you want to use JSP tags in Grace 2022.2.x, please checkout branch [main](https://github.com/grace-guides/gs-jsp-tags).
 
 ## Using JSP Tag Libraries
 
@@ -18,9 +18,9 @@ dependencies {
     // Using JSP tags
     runtimeOnly "org.graceframework:grace-web-jsp"
     // JSTL standard library is no longer added as a dependency by default
-    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:2.3.6"
-    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:1.2.7"
-    runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:1.2.6"
+    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.0"
+    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0"
+    runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1"
 
 }
 
@@ -38,8 +38,8 @@ Declare the JSP taglib to use with the taglib directive at the top of your GSP f
 
 ```
 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 
 ```
 
