@@ -7,7 +7,7 @@ buildscript {
     dependencies {
         classpath "org.graceframework:grace-gradle-plugin:$graceVersion"
         classpath "com.github.erdi:webdriver-binaries-gradle-plugin:3.2"
-        classpath "org.graceframework.plugins:asset-pipeline-gradle:5.2.6"
+        classpath "org.graceframework.plugins:asset-pipeline-gradle:6.0.0-M4"
     }
 }
 
@@ -57,21 +57,17 @@ dependencies {
     implementation "org.graceframework.plugins:scaffolding"
     implementation "org.graceframework.plugins:fields"
     implementation "org.graceframework.plugins:events"
-    implementation "org.graceframework.plugins:hibernate5"
-    implementation "org.hibernate:hibernate-core:5.6.15.Final"
+    implementation "org.graceframework.plugins:hibernate"
+    implementation "org.hibernate:hibernate-core-jakarta:5.6.15.Final"
     implementation "org.graceframework:grace-plugin-gsp"
     profile "org.graceframework.profiles:web"
     runtimeOnly "com.h2database:h2"
-    runtimeOnly "org.apache.tomcat:tomcat-jdbc"
-    runtimeOnly "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3"
-    runtimeOnly "jakarta.el:jakarta.el-api:3.0.3"
-    runtimeOnly "org.glassfish:jakarta.el:3.0.4"
     // Using JSP tags
     runtimeOnly "org.graceframework:grace-web-jsp"
-    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:2.3.6"
-    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:1.2.7"
-    runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:1.2.6"
-    runtimeOnly "org.graceframework.plugins:asset-pipeline-plugin:5.2.6"
+    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.0"
+    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0"
+    runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1"
+    runtimeOnly "org.graceframework.plugins:asset-pipeline-plugin:6.0.0-M4"
     testImplementation "org.graceframework:grace-test-support"
     testImplementation "org.mockito:mockito-core"
     testImplementation "org.graceframework.plugins:geb"
@@ -83,7 +79,7 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = '11'
+    sourceCompatibility = '17'
 }
 
 bootRun {
