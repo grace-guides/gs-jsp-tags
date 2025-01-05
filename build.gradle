@@ -1,13 +1,12 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven { url "https://repo.gradle.org/gradle/libs-releases" }
-        maven { url "https://plugins.gradle.org/m2/" }
+        gradlePluginPortal()
     }
     dependencies {
         classpath "org.graceframework:grace-gradle-plugin:$graceVersion"
         classpath "com.github.erdi:webdriver-binaries-gradle-plugin:3.2"
-        classpath "org.graceframework.plugins:asset-pipeline-gradle:6.0.1"
+        classpath "org.graceframework.plugins:asset-pipeline-gradle:6.1.1"
     }
 }
 
@@ -58,7 +57,6 @@ dependencies {
     implementation "org.graceframework.plugins:fields"
     implementation "org.graceframework.plugins:events"
     implementation "org.graceframework.plugins:hibernate"
-    implementation "org.hibernate:hibernate-core-jakarta:5.6.15.Final"
     implementation "org.graceframework:grace-plugin-gsp"
     profile "org.graceframework.profiles:web"
     runtimeOnly "com.h2database:h2"
@@ -67,7 +65,7 @@ dependencies {
     runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.0"
     runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0"
     runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1"
-    runtimeOnly "org.graceframework.plugins:asset-pipeline-plugin:6.0.1"
+    runtimeOnly "org.graceframework.plugins:asset-pipeline-plugin:6.1.1"
     testImplementation "org.graceframework:grace-test-support"
     testImplementation "org.mockito:mockito-core"
     testImplementation "org.graceframework.plugins:geb"
