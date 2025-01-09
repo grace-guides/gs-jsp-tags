@@ -3,15 +3,15 @@
 [![Grace on X](https://img.shields.io/twitter/follow/graceframework?style=social)](https://twitter.com/graceframework)
 
 [![Groovy Version](https://img.shields.io/badge/Groovy-4.0.24-blue?style=flat&color=4298b8)](https://groovy-lang.org/releasenotes/groovy-4.0.html)
-[![Grace Version](https://img.shields.io/badge/Grace-2023.1.1-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2023.1.1)
-[![Spring Boot Version](https://img.shields.io/badge/Spring_Boot-3.1.12-blue?style=flat&color=6db33f)](https://github.com/spring-projects/spring-boot/releases/tag/v3.1.12)
+[![Grace Version](https://img.shields.io/badge/Grace-2023.2.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2023.2.0)
+[![Spring Boot Version](https://img.shields.io/badge/Spring_Boot-3.2.12-blue?style=flat&color=6db33f)](https://github.com/spring-projects/spring-boot/releases/tag/v3.2.12)
 
 
 # Using JSP Tags in Grace
 
 ## Grace Version
 
-* Grace 2023.1.1
+* Grace 2023.2.0
 
 > [!TIP]
 > If you want to use JSP tags in Grace 2022.2.x, please checkout branch [main](https://github.com/grace-guides/gs-jsp-tags).
@@ -27,8 +27,8 @@ dependencies {
     // Using JSP tags
     runtimeOnly "org.graceframework:grace-web-jsp"
     // JSTL standard library is no longer added as a dependency by default
-    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.0"
-    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0"
+    runtimeOnly "jakarta.servlet.jsp:jakarta.servlet.jsp-api"
+    runtimeOnly "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api"
     runtimeOnly "org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1"
 
 }
