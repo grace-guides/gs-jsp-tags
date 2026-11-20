@@ -1,0 +1,9 @@
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+dependencies {
+    implementation "org.graceframework:grace-gradle-plugin:2024.0.2"
+    implementation "org.graceframework.plugins:asset-pipeline-gradle:7.0.0"
+}

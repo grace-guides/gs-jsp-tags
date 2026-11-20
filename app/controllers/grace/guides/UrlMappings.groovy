@@ -9,10 +9,11 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
-        "/tag"(view:"/tag")
-        "/site"(view:"/site")
-        "500"(view:'/error')
-        "404"(view:'/notFound')
+        '/'(view: '/index')
+        '500'(view: '/error')
+        '404'(view: '/notFound')
+        '/tag'(view: '/tag')
+        '/site'(view: '/site')
     }
+
 }

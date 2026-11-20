@@ -54,7 +54,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plugins</a>
                     <ul class="dropdown-menu">
                         <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
                             <li><a class="dropdown-item" href="#">${plugin.name} - ${plugin.version}</a></li>
@@ -107,11 +107,11 @@
 
             </div>
             <div class="col-md-4 col-sm-12">
-                <a href="http://docs.graceframework.org" target="_blank">
+                <a href="https://docs.graceframework.org" target="_blank">
                     <asset:image src="documentation.svg" alt="Grace Documentation" class="float-left"/>
                 </a>
-                <strong class="centered"><a href="http://docs.graceframework.org" target="_blank">Documentation</a></strong>
-                <p>Ready to dig in? You can find in-depth documentation for all the features of Grace in the <a href="http://docs.graceframework.org" target="_blank">User Guide</a>.</p>
+                <strong class="centered"><a href="https://docs.graceframework.org" target="_blank">Documentation</a></strong>
+                <p>Ready to dig in? You can find in-depth documentation for all the features of Grace in the <a href="https://docs.graceframework.org" target="_blank">User Guide</a>.</p>
 
             </div>
             <div class="col-md-4 col-sm-12">
