@@ -13,12 +13,10 @@
 
 * Grace 2024.0.2
 
-> [!TIP]
-> If you want to use JSP tags in Grace 2022.2.x, please checkout branch [main](https://github.com/grace-guides/gs-jsp-tags).
-
 ## Using JSP Tag Libraries
 
-In order to use JSP support you must ensure you have the `grace-web-jsp` dependency on your classpath by adding it to your `build.gradle` file:
+> [!NOTICE]
+> In Grace 2024.0.x, `grace-web-jsp` has been merge into `grace-web-gsp`, so you don't need to add it again.
 
 ```gradle
 
@@ -37,9 +35,13 @@ First you shoud configure Grace to scan for the JSP tld files,
 
 ```yml
 grails:
-    gsp:
-        tldScanPattern: 'classpath*:/META-INF/*.tld'
+    views:
+        gsp:
+            tldScanPattern: 'classpath*:/META-INF/*.tld'
 ```
+
+> [!NOTICE]
+> In Grace 2024.0.x, `grails.gsp.tldScanPattern` has been deprecated, use `grails.views.gsp.tldScanPattern` instead.
 
 Declare the JSP taglib to use with the taglib directive at the top of your GSP file:
 
