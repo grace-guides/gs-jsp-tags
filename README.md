@@ -15,7 +15,7 @@
 
 ## Using JSP Tag Libraries
 
-> [!NOTICE]
+> [!CAUTION]
 > In Grace 2024.0.x, `grace-web-jsp` has been merge into `grace-web-gsp`, so you don't need to add it again.
 
 ```gradle
@@ -40,7 +40,7 @@ grails:
             tldScanPattern: 'classpath*:/META-INF/*.tld'
 ```
 
-> [!NOTICE]
+> [!CAUTION]
 > In Grace 2024.0.x, `grails.gsp.tldScanPattern` has been deprecated, use `grails.views.gsp.tldScanPattern` instead.
 
 Declare the JSP taglib to use with the taglib directive at the top of your GSP file:
